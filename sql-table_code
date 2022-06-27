@@ -1,0 +1,15 @@
+
+CREATE TABLE buildings2021(
+	id SMALLSERIAL PRIMARY KEY,
+	neighbourhood_id SMALLINT,
+	neighbourhood_name varchar(50),
+	district_id INT,
+	district_name varchar(50),
+	province_id SMALLINT,
+	province_name varchar(50),
+	b_length_area_id SMALLINT,
+	b_length SMALLINT,
+	b_polygon_geom geometry(Polygon,4326), 
+	b_point_geom geometry(Point, 4326),
+	control_point geometry(Point, 4326)
+)
